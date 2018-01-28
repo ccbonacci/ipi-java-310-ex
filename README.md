@@ -5,6 +5,7 @@ TP de Java, module 310 pour l'IPI
 
 - Créer le répertoire `C:\web`
 - Récupérer l'archive du TP https://github.com/pjvilloud/ipi-java-310-ex/archive/master.zip et la décompresser dans `C:\web\tp`
+- Regarder les différents fichiers contenus dans le TP
 
 ## Installation d'Apache et de PHP sous Windows
 
@@ -32,3 +33,5 @@ TP de Java, module 310 pour l'IPI
 - Aller sur le site d'Apache Tomcat http://tomcat.apache.org/ et télécharger les binaires de Tomcat 8.5 pour Windows http://apache.mediamirrors.org/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27-windows-x64.zip puis les décompresser dans `C:\web` (ce qui donnera `C:\web\apache-tomcat-8.5.27`)
 - Exécuter `startup.bat` dans `C:\web\apache-tomcat-8.5.27\bin` pour lancer le serveur. Vous pouvez obtenir un message d'erreur spécifiant que les variables `JRE_HOME` ou `JAVA_HOME` ne sont pas définies. Configurez ces variables d'environnement globalement dans Windows et fermer et lancer une nouvelle console pour prendre en compte ces nouvelles variables.
 - Relancer le serveur et accéder à la page http://localhost:8080/ pour constater l'affichage de la page d'accueil de Tomcat.
+- Modifier le fichier `C:\web\apache-tomcat-8.5.27\conf\server.xml` à l'aide de la documentation https://tomcat.apache.org/tomcat-8.5-doc/appdev/deployment.html pour que le serveur pointe sur `C:/web/tp/ipi-java-310-ex-master/tomcat`
+- Redémarrer et vérifier que lorsqu'on accède à http://localhost:8080/ on obtient bien le message **OK avec une JSP !**
